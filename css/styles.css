@@ -1,0 +1,39 @@
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*Root styles and variables*/
+:root {
+  --main-font: "Rubik", sans-serif;
+  --color-menu: #4a4a4a;
+  --color-title: #ffffff;
+  --color-background: #3cdbc0;
+  font-size: 10px;
+  font-family: var(--main-font);
+}
+
+/*Header styles*/
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo {
+  width: 150px;
+  margin: 10px 0;
+}
+.header-menu {
+  display: flex;
+  list-style: none;
+  font-size: 1.6rem;
+  color: var(--color-menu);
+}
+.header-menu-item {
+  margin-bottom: 13px;
+  text-transform: uppercase;
+}
+.header-menu-item + .header-menu-item {
+  margin-left: 20px;
+}
