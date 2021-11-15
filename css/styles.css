@@ -13,7 +13,9 @@
   font-size: 10px;
   font-family: var(--main-font);
 }
-
+body {
+  height: 100vh;
+}
 /*Header styles*/
 .header {
   display: flex;
@@ -36,4 +38,20 @@
 }
 .header-menu-item + .header-menu-item {
   margin-left: 20px;
+}
+/*main styles*/
+.main {
+  height: calc(100% - 112px);
+  background-color: var(--color-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-title {
+  font-size: 3rem;
+  color: var(--color-title);
+}
+.main-container {
+  max-width: 250px;
 }
