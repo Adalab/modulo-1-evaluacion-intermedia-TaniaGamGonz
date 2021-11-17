@@ -26,9 +26,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.link {
-  cursor: pointer;
-}
+
 .logo {
   width: 150px;
   margin: 10px 0;
@@ -37,15 +35,21 @@ body {
   display: flex;
   list-style: none;
   font-size: 1.6rem;
-  color: var(--color-menu);
 }
+
 .header-menu-item {
   margin-bottom: 13px;
+}
+.menu__link {
+  text-decoration: none;
+  color: var(--color-menu);
+  padding: 10px;
   text-transform: uppercase;
 }
-.header-menu-item + .header-menu-item {
-  margin-left: 20px;
+.header-menu-item:first-of-type {
+  margin-left: -10px;
 }
+
 /*main styles*/
 .main {
   height: 100%;
@@ -60,6 +64,7 @@ body {
   color: var(--color-title);
   max-width: 250px;
   text-align: center;
+  text-transform: capitalize;
 }
 
 /*Tablet-Desktop styles*/
@@ -78,6 +83,7 @@ body {
   .logo {
     margin: 20px 0;
   }
+
   .header-menu-item {
     margin-bottom: 0;
   }
